@@ -5,6 +5,7 @@ import { PrismaClient } from "@prisma/client";
 import dotenv from "dotenv";
 import bookRoutes from "./routes/bookRoutes";
 import categoryRoutes from "./routes/categoryRoutes";
+import path from "path";
 
 dotenv.config();
 
@@ -17,11 +18,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
+
 app.use("/api", bookRoutes);
 app.use("/api", categoryRoutes);
-
-
-
 
 
 
