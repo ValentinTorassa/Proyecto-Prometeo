@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Subir Libro a Prometeo</title>
+</head>
+<body>
+  <h1>Subir Libro</h1>
+
+  <form id="uploadForm" action="http://localhost:3000/api/books" method="POST" enctype="multipart/form-data">
+    <div>
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" required>
+    </div>
+
+    <div>
+      <label for="author">Autor:</label>
+      <input type="text" id="author" name="author" required>
+    </div>
+
+    <div>
+      <label for="description">Descripción:</label>
+      <textarea id="description" name="description" required></textarea>
+    </div>
+
+    <div>
+      <label for="categoryId">ID Categoría:</label>
+      <input type="text" id="categoryId" name="categoryId" required>
+    </div>
+
+    <div>
+      <label for="book">Archivo del libro (PDF o EPUB):</label>
+      <input type="file" id="book" name="book" accept=".pdf,.epub" required>
+    </div>
+
+    <div>
+      <label for="cover">Imagen de portada (JPG o PNG):</label>
+      <input type="file" id="cover" name="cover" accept=".jpg,.jpeg,.png" required>
+    </div>
+
+    <button type="submit">Subir Libro</button>
+  </form>
+
+</body>
+</html>
