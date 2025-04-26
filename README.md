@@ -27,8 +27,4 @@ Fomentar el acceso libre al conocimiento a través de una aplicación web modern
 
 ## 🤝 Licencia
 
-**Prometeo** será publicado bajo una licencia libre y abierta para permitir su distribución, modificación y uso sin restricciones.
-
----
-
-¡Prometeo es más que código, es una chispa que queremos compartir!
+**Prometeo** esta escrito bajo la GNU v3
