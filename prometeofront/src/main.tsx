@@ -6,7 +6,6 @@ import HomePage from './pages/HomePage';
 import UploadBookPage from './pages/UploadBookPage';
 import BookDetailPage from './pages/BookDetailPage';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
